@@ -1,5 +1,18 @@
 .about{
     height: 100vh;
-    background-color: rgb(106, 152, 198);
+    display: flex;
+    padding-left: 50px;
+    
+    flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      h1{
+        font-size: 70px;
+        font-weight: 600;
+        color: #2F2F2F;
+      }
   }
   
