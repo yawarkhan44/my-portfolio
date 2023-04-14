@@ -1,7 +1,9 @@
 import React from 'react'
 import "./HeroSection.scss"
 
-import Image from "./../../images/bg.png"
+import Image from "./../../images/pc.png"
+
+import {motion, Variants} from "framer-motion"
 
 const HeroSection = () => {
   return (
@@ -25,9 +27,15 @@ const HeroSection = () => {
           Learn More!
         </button>
       </div>
-      <div className="rightSection">
+      <motion.div className="rightSection"
+      initial={{y: 0}}
+      animate={{ y: [0, 20, 0]}}
+      transition={{
+        duration: 4,
+        repeat: Infinity}}
+      >
         <img src={Image} alt="" className="heroImage" />
-      </div>
+      </motion.div>
 
     </div>
   )
