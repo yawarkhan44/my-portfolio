@@ -1,36 +1,33 @@
-import React from 'react'
 import "./Contact.scss"
 
 
 const Contact = () => {
+
+ 
   return (
-    <div
-        className="info-container"
-        id="contact"
-      >
-        <div className="info-wrapper">
-          <div
-            className="info-row"
-          >
-            <div className="column-1">
-              <div className="text-rapper">
-                {/* <p className="top-line">{topLine}</p> */}
-                <h1 className="heading">Contact Me</h1>
-                <p className="subtitle">
-                I am excited about the possibility of new career opportunities and am open to hearing about potential job openings.
-                As a job seeker, I am open to considering a diverse range of positions and industries.
-                </p>
-                {/* <ul className="onordered-list">{listItems}</ul> */}
-              </div>
-            </div>
-            <div className="column-2">
-              {/* <div className="image-wrapper">
-                <img src={img} alt={alt} className="image" />
-              </div> */}
-            </div>
+    
+    <div className="contactSection">
+      <div className="contactContainer">
+        <div className="leftSection">
+          <div className="contactForm" >
+            <h1>Contact Us</h1>
+            <input placeholder="Name" name="name" />
+            <input placeholder="Email" name="email" />
+            <textarea
+              className="textMessage"
+              placeholder="Write your message"
+              name="message"
+              rows={10}
+            />
+            <button type="submit">Send</button>
+            
           </div>
         </div>
+        <div className="rightSection">
+
+        </div>
       </div>
+    </div>
   )
 }
 
