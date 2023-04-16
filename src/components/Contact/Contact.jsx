@@ -1,5 +1,6 @@
-import "./Contact.scss"
 
+import "./Contact.scss"
+import Map from "../Map/Map"
 
 const Contact = () => {
 
@@ -24,7 +25,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="rightSection">
-
+          <Map />
         </div>
       </div>
     </div>
