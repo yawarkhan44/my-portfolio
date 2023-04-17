@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className="hero">
       <div className="leftSection">
-        <h1 className="title">Title</h1>
+        <h1>Title</h1>
         <div className="mission">
           <div className="line">—</div>
           <div className="missionLine">
@@ -23,7 +23,7 @@ const HeroSection = () => {
           rerum dignissimos ea quia dolores similique? Nulla perspiciatis
           id aperiam!
         </div>
-        <button className="learnMore">
+        <button>
           Learn More!
         </button>
       </div>
