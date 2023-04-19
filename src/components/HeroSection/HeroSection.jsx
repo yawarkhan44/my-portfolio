@@ -9,14 +9,8 @@ const HeroSection = () => {
   return (
     <div className="hero">
       <div className="leftSection">
-        <h1>Title</h1>
-        <div className="mission">
-          <div className="line">—</div>
-          <div className="missionLine">
-            Lorem ipsum dolor
-          </div>
-        </div>
-        <div className="description">
+        <h1>Hi, I'm Yawar, Web developer</h1>
+        {/* <div className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Consequuntur atque libero doloribus voluptatem eveniet, 
           ducimus necessitatibus veritatis asperiores fugiat animi 
@@ -25,7 +19,7 @@ const HeroSection = () => {
         </div>
         <button>
           Learn More!
-        </button>
+        </button> */}
       </div>
       <motion.div className="rightSection"
       initial={{y: 0}}

@@ -2,61 +2,58 @@
     height: 100vh;
     display: flex;
     padding-left: 50px;
-    background-color: white;
+    align-items: center;
+    justify-content: space-between;
     @media screen and (max-width: 1000px) {
       flex-direction: column;
       height: 100%;
      }
 
     .leftSection{
-      flex: 2;
+      flex: 1;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       gap: 20px;
 
       h1{
+        text-align: right;
         font-size: 70px;
         font-weight: 600;
         color: #2F2F2F;
+
+        @media screen and (max-width: 1000px) {
+          text-align: left;
+         }
       }
       .mission{
         display: flex;
         align-items: center;
         gap: 10px;
 
-        .line{
-          color: #2F2F2F;
-        }
         .missionLine{
           color: #2F2F2F;
         }
       }
-      .description{
-        color: #2F2F2F;
-      }
-      button{
-        width: 100px;
-        padding: 10px;
-        border: none;
-        background-color: #8636F1;
-        color: white;
-      }
+      // .description{
+      //   color: #2F2F2F;
+      // }
+      // button{
+      //   width: 100px;
+      //   padding: 10px;
+      //   border: none;
+      //   background-color: #8636F1;
+      //   color: white;
+      // }
     }
     .rightSection{
-      flex: 3;
-      position: relative;
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       img{
         width: 500px;
         height: 500px;
-        object-fit: contain;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
 
         @media screen and (max-width: 1000px) {
           width: 300px;

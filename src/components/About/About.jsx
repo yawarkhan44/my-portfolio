@@ -7,7 +7,11 @@ const About = () => {
 
     <div className="about">
       <div className="leftSection">
-        <h1>Skills and Experience</h1>
+        <h1>Skills</h1>
+        
+      </div>
+      <div className="rightSection">
+        <Experience />
         <div className="description">
           I am passionate about creating beautiful and intuitive websites.
           I have a strong understanding of HTML, CSS, and JavaScript, and I am always eager to learn new 
@@ -21,9 +25,6 @@ const About = () => {
           design principles to create a site that is easy to use and visually appealing.
           I can work closely with back-end developers and designers to bring a website to life.
         </div>
-      </div>
-      <div className="rightSection">
-        <Experience />
       </div>
 
     </div>

@@ -1,6 +1,6 @@
 .contactSection{
   height: 100vh;
-  background-color: #FFC0CB;
+  background-color: white;
 
   .contactContainer{
     width: 100%;
@@ -19,7 +19,7 @@
       }
 
       .contactForm{
-        width: 500px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         gap: 25px;
@@ -54,7 +54,7 @@
       }
     }
     .rightSection{
-      flex: 1;
+      flex: 2 ;
       @media only screen and (max-width: 768px) {
         display: none;
       }

@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="contactContainer">
         <div className="leftSection">
           <div className="contactForm" >
-            <h1>Contact Us</h1>
+            <h1>Contact</h1>
             <input placeholder="Name" name="name" />
             <input placeholder="Email" name="email" />
             <textarea
