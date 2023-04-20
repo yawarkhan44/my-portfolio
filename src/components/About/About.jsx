@@ -1,16 +1,33 @@
 import React from "react";
 import "./About.scss";
 import Experience from "./../Experience/Experience";
+import {motion} from "framer-motion"
 
 const About = () => {
   return (
 
     <div className="about">
-      <div className="leftSection">
+      <motion.div className="leftSection"
+      initial={{x: -200}}
+      viewport={{once: true, amount : 0.01}}
+         whileInView={{ x: 0}}
+         transition={{
+           duration: 1.5,
+           type:'spring',
+         bounce: 0.4}}
+         >
         <h1>Skills</h1>
         
-      </div>
-      <div className="rightSection">
+      </motion.div>
+      <motion.div className="rightSection"
+      initial={{x: 500}}
+      viewport={{once: true, amount : 0.01}}
+         whileInView={{ x: 0}}
+         transition={{
+           duration: 1.5,
+           type:'spring',
+         bounce: 0.4}}
+      >
         <Experience />
         <div className="description">
           I am passionate about creating beautiful and intuitive websites.
@@ -25,7 +42,7 @@ const About = () => {
           design principles to create a site that is easy to use and visually appealing.
           I can work closely with back-end developers and designers to bring a website to life.
         </div>
-      </div>
+      </motion.div>
 
     </div>
   );

@@ -1,6 +1,7 @@
 
 import "./Contact.scss"
 import Map from "../Map/Map"
+import {motion} from "framer-motion"
 
 const Contact = () => {
 
@@ -9,7 +10,15 @@ const Contact = () => {
     
     <div className="contactSection">
       <div className="contactContainer">
-        <div className="leftSection">
+        <motion.div className="leftSection"
+        initial={{x: -300}}
+        viewport={{once: true, amount : 0.01}}
+           whileInView={{ x: 0}}
+           transition={{
+             duration: 1.5,
+             type:'spring',
+           bounce: 0.4}}
+        >
           <div className="contactForm" >
             <h1>Contact</h1>
             <input placeholder="Name" name="name" />
@@ -23,10 +32,18 @@ const Contact = () => {
             <button type="submit">Send</button>
             
           </div>
-        </div>
-        <div className="rightSection">
+        </motion.div>
+        <motion.div className="rightSection"
+        initial={{scale: 0}}
+        viewport={{once: true, amount : 0.01}}
+           whileInView={{ scale: 1}}
+           transition={{
+             duration: 1.5,
+             type:'spring',
+           bounce: 0.4}}
+        >
           <Map />
-        </div>
+        </motion.div>
       </div>
     </div>
   )
