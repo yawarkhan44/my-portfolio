@@ -8,6 +8,7 @@ import "./App.scss"
 
 import {motion, Variants} from "framer-motion"
 import { useState } from 'react';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
