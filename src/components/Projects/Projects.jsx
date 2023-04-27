@@ -20,7 +20,7 @@ const Projects = () => {
         <h1>Projects</h1>
       </motion.div>
       <motion.div className="projectsContainer"
-        initial={{x: 500}}
+        initial={{x: 300}}
         viewport={{once: true, amount : 0.01}}
            whileInView={{ x: 0}}
            transition={{

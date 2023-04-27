@@ -4,6 +4,10 @@
     border-radius: 10px;
     width: 300px;
 
+    @media screen and (max-width: 1000px) {
+        width: 200px;
+    }
+
     .cardWrapper{
         display: flex;
         flex-direction: column;

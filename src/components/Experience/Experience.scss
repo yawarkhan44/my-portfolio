@@ -12,35 +12,24 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 500px;
     padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
-}
-
-@media (min-width:768px){
-    .container{
-        margin: 0 auto;
+    
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin: 20px;
     }
 }
 
-@media (min-width: 992px){
-    .container {
-        max-width: 960px;
-    }
-}
 
-@media (min-width: 1400px){
-    .container {
-        max-width: 1350px;
-    }
-}
 
 
 
 .experience-section {
     position: relative;
-    width: 500px;
+    width: 100%;
 }
 
 .experience-section .experience-items {
