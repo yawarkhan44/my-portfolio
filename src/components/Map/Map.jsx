@@ -36,7 +36,7 @@ const Map = () => {
         }
       </Geographies>
       <Annotation
-        subject={[6.9603, 50.9375]}
+        subject={[8.6821, 50.1109]}
         dx={-30}
         dy={-120}
         connectorProps={{
@@ -46,7 +46,7 @@ const Map = () => {
         }}
       >
         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#DA4EA2">
-          {"Cologne"}
+          {"Frankfurt"}
         </text>
       </Annotation>
       
