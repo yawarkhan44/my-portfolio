@@ -7,7 +7,7 @@ const Project = (props) => {
         <div className="projectContainer">
             <div className="cardWrapper">
                 <div className="imageContainer">
-                    <a href='https://fastidious-pothos-e49b6e.netlify.app/'>
+                    <a href='https://illustrious-pixie-8434fc.netlify.app'>
                         <img src={props.src} alt="" />
                     </a>
                 </div>
